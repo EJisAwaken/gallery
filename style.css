@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.photos img{
+    width: 400px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* CSS DE LA FENETRE MODAL*/
+
+    .fenetreModal{
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        background: black;
+        display: none;
+
+    }
+
+    .bodyModal{
+        display: flex;
+        align-items: center;
+    }
+
+    .fleche img{
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .imageCentral{
+        margin: 100px auto;
+        width: 800px;
+        height: 300px;
+    }
+
+    .imageCentral img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .nomPhoto{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .choixImage{
+        display: flex;
+        justify-content: center;
+    }
+
+    .choixImage img{
+        width: 300px;
+        margin: 20px 20px;
+        height: 200px;
+        cursor: pointer;
+    }
+
+    .choixImage img:hover{
+        -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+
+    .fermer{
+        border: 1px solid red;
+        width: 80px;
+        height: 80px;
+        background: red;
+        border-radius:50% ;
+        margin: 40px;
+        position: absolute;
+        left: 90%;
+        cursor: pointer;
+
+
+    }
+
+/* CSS DE LA FENETRE MODAL*/
+
+
+
+@media  screen and (max-width: 1500px) {
+
+    .photos img{
+        width: 600px;
+        margin: 10px 10px;
+    }
+    .gallery{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .photos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+.city, .nature{
+    display: none;
+}
